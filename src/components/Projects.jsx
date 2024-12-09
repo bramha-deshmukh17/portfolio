@@ -9,12 +9,12 @@ const Projects = () => {
                 <div className="project-item">
                     <h3>Project 1</h3>
                     <p>Description of Project 1.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href="https://github.com/yourusername/project1" className='p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500' target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
                 <div className="project-item">
                     <h3>Project 2</h3>
                     <p>Description of Project 2.</p>
-                    <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href="https://github.com/yourusername/project2" className='p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500' target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
         </section>

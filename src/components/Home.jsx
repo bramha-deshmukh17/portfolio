@@ -3,9 +3,9 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <section id="home">
+        <section id="home" className='mt-5 mb-5'>
             <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Bramha Deshmukh. I'm a web developer and passionate about creating impactful solutions.</p>
+            <p>Hi, I'm Bramha Deshmukh. I'm a web and mobile developer and passionate about creating impactful solutions.</p>
         </section>
     );
 };

@@ -3,12 +3,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className='bg-gray-900 text-white p-3'>
             <p>&copy; 2024 Bramha Deshmukh</p>
-            <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
         </footer>
     );
 };
