@@ -1,0 +1,18 @@
+/*Home css*/
+#home {
+    padding-top: 8%;
+    max-width: 700px;
+    text-align: justify;
+    background-color: var(--bg-color);
+    line-height: 25px;
+}
+
+#home h1 {
+    color: var(--main-heading);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#home p{
+    color: var(--text-color);
+}
