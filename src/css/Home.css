@@ -1,0 +1,20 @@
+/*Home css*/
+#home {
+    padding-top: 5%;
+    text-align: justify;
+    background-color: var(--bg-color);
+}
+
+.left{
+    box-shadow: 10px 10px 20px 5px var(--shadow-color);
+}
+
+#home h1 {
+    color: var(--main-heading);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#home p {
+    color: var(--text-color);
+}

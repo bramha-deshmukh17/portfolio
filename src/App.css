@@ -2,6 +2,7 @@
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
+  background-color: var(--bg-color);
 }
 
 .light{
@@ -10,7 +11,7 @@
   --btn-color: #5f99be;
   --btn-text: #fff;
   --bg-color: #fff;
-
+  --shadow-color: #999;
 }
 
 .dark{
@@ -19,4 +20,5 @@
   --btn-color: #5f99be;
   --btn-text: #fff;
   --bg-color: #1a1a1a;
+  --shadow-color: #000;
 }
