@@ -1,7 +1,6 @@
 #projects {
-    margin-top: 18%;
+    margin-top: 15%;
     background-color: var(--bg-color);
-    box-shadow: 10px 10px 20px 5px var(--shadow-color);
 }
 
 #projects h2{
