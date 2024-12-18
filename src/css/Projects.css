@@ -1,23 +1,30 @@
 #projects {
-    margin-top: 15%;
+    margin-top: 18%;
     background-color: var(--bg-color);
     box-shadow: 10px 10px 20px 5px var(--shadow-color);
 }
 
 #projects h2{
     color: var(--main-heading);
-    font-weight: 900;
-    font-size: 22px;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+.project-title{
+    background-color: var(--bg-color);
+    color: var(--main-heading);
+}
 
 /*Flip card*/
-
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 300px;
+    height: 320px;
     perspective: 1000px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .flip-card-inner {

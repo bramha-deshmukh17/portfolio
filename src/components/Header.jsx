@@ -42,7 +42,9 @@ const Header = () => {
                 <div className="hidden md:flex justify-center flex-grow space-x-8">
                     <a href="#home" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a>
                     <a href="#projects" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
-                    <a href="#services" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>Services</a>
+                    <a href="#experience" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>Experience</a>
+                    <a href="#skills" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>Skills</a>
+                    <a href="#education" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>Education</a>
                     <a href="#contact" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
                 </div>
 

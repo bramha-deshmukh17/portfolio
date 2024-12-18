@@ -6,9 +6,9 @@ const Home = () => {
         <section id="home" className="m-5 flex flex-col md:flex-row items-center justify-around md:space-y-0 md:space-x-5">
             {/* Left Section (2x width) */}
             <div className="left flex-2 max-w-2xl p-5 rounded-lg">
-                <h1 className="text-2xl md:text-3xl font-bold mb-4">
+                <h2 className="text-3xl font-bold mb-8">
                     Welcome to My Portfolio
-                </h1>
+                </h2>
                 <p className="text-base md:text-lg mb-3 leading-relaxed">
                     Hi, I'm Bramha Deshmukh. I'm a web and mobile developer and passionate
                     about creating impactful solutions.
