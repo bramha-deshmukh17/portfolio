@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Contact.css';
-import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaDownload } from 'react-icons/fa';
 
 const Contact = () => {
     return (
@@ -63,18 +63,17 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    {/* Instagram */}
+                    {/* resume */}
                     <div className="flex items-center">
-                        <FaInstagram className="text-pink-600" size={30} />
-                        <a
-                            href="https://www.instagram.com/bramha.deshmukh.17/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="ml-2 text-lg text-pink-600 hover:underline"
+                        <button
+                            onClick={() => window.open('./resume.pdf', '_blank')}
+                            className="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
                         >
-                            Instagram
-                        </a>
+                            <FaDownload className="mr-2" size={20} />
+                            Download Resume
+                        </button>
                     </div>
+
                 </div>
             </div>
         </section>
