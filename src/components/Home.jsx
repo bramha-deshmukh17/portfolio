@@ -10,7 +10,7 @@ const Home = () => {
                     Welcome to My Portfolio
                 </h2>
                 <p className="text-base md:text-lg mb-3 leading-relaxed">
-                    Hi, I'm Bramha Deshmukh. I'm a web and mobile developer and passionate
+                    Hi, I'm Bramha Deshmukh. I'm a web and mobile application developer and passionate
                     about creating impactful solutions.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed">
