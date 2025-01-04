@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Education.css'
+import SpotlightCard from './Animate/SpotlightCard';
 
 const Education = () => {
     const educationDetails = [
@@ -40,45 +41,51 @@ const Education = () => {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {educationDetails.map((education, index) => (
+
+
                         <div
                             key={index}
-                            className="rounded-lg shadow-md p-6 flex flex-col"
+                            className="rounded-lg shadow-md flex flex-col"
                             style={{
                                 backgroundColor: "var(--bg-color)",
                                 boxShadow: "5px 5px 15px var(--shadow-color)",
                                 color: "var(--text-color)",
+                                height: "220px",
                             }}
                         >
-                            <div className="flex items-center justify-center mb-4">
-                                <h3
-                                    className="text-lg font-semibold"
-                                    style={{ color: "var(--main-heading)" }}
-                                >
-                                    {education.level}
-                                </h3>
-                                {education.status === "Pursuing" && (
-                                    <span className="ml-2 px-2 py-1 text-xs font-semibold text-white bg-red-400 rounded-full">
-                                        Pursuing
-                                    </span>
-                                )}
-                            </div>
-                            <div className="flex flex-col gap-2 text-left">
-                                <p className="text-sm">
-                                    <b>Institution:</b> {education.institution}
-                                </p>
-                                <p className="text-sm">
-                                    <b>Year:</b> {education.year}
-                                </p>
-                                {education.course && (
+                            <SpotlightCard className="card shadow-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                                <div className="flex items-center justify-center mb-4">
+                                    <h3
+                                        className="text-lg font-semibold"
+                                        style={{ color: "var(--main-heading)" }}
+                                    >
+                                        {education.level}
+                                    </h3>
+                                    {education.status === "Pursuing" && (
+                                        <span className="ml-2 px-2 py-1 text-xs font-semibold text-white bg-red-400 rounded-full">
+                                            Pursuing
+                                        </span>
+                                    )}
+                                </div>
+                                <div className="flex flex-col gap-2 text-left">
                                     <p className="text-sm">
-                                        <b>Course:</b> {education.course}
+                                        <b>Institution:</b> {education.institution}
                                     </p>
-                                )}
-                                <p className="text-sm">
-                                    <b>Score:</b> {education.score}
-                                </p>
-                            </div>
+                                    <p className="text-sm">
+                                        <b>Year:</b> {education.year}
+                                    </p>
+                                    {education.course && (
+                                        <p className="text-sm">
+                                            <b>Course:</b> {education.course}
+                                        </p>
+                                    )}
+                                    <p className="text-sm">
+                                        <b>Score:</b> {education.score}
+                                    </p>
+                                </div>
+                            </SpotlightCard>
                         </div>
+
                     ))}
                 </div>
             </div>

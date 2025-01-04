@@ -4,7 +4,7 @@ import '../css/Header.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     // Menu toggle
     const toggleMenu = () => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Contact.css';
+import ShinyText from './Animate/ShinyText';
 import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaDownload } from 'react-icons/fa';
 
 const Contact = () => {
@@ -65,13 +66,14 @@ const Contact = () => {
 
                     {/* resume */}
                     <div className="flex items-center">
-                        <button
+                        
+                        <ShinyText
+                            text="Resume"
+                            disabled={false}
+                            speed={1}
+                            className="home"
                             onClick={() => window.open('./resume.pdf', '_blank')}
-                            className="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
-                        >
-                            <FaDownload className="mr-2" size={20} />
-                            Download Resume
-                        </button>
+                        />
                     </div>
 
                 </div>

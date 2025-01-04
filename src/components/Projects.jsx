@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/Projects.css';
-import {FaGithub} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import ShinyText from './Animate/ShinyText';
+import SpotlightCard from './Animate/SpotlightCard' 
 
 const Projects = () => {
     return (
@@ -18,17 +20,25 @@ const Projects = () => {
                                 EduMate
                             </h2>
                         </div>
-                        <div className="flip-card-back rounded-lg text-justify p-3">
-                            <p> <b>EduMate is a e-learning website designed using <code>PHP</code></b>.<br/>
-                                With its 3 distinct modules - Student Module, Admin Module, Discussion Forum - the
-                                platform provides a comprehensive and user-friendly environment for effective learning,
-                                efficient course management, and engaging discussions. <br/><br/>
+                        <div className="flip-card-back rounded-lg text-justify">
+                            <SpotlightCard className="card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                                <p> <b>EduMate is a e-learning website designed using <span></span>
+                                    <ShinyText
+                                        text="PHP"
+                                        disabled={false}
+                                        speed={1}
+                                        className="code"
+                                    /></b><br />
+                                    With its 3 distinct modules - Student Module, Admin Module, Discussion Forum - the
+                                    platform provides a comprehensive and user-friendly environment for effective learning,
+                                    efficient course management, and engaging discussions. <br /><br />
+
+                                </p>
                                 <div className="flex justify-center">
                                     <FaGithub className="" size={30} />
                                     <a href="https://github.com/bramha-deshmukh17/edumate" target="_blank" rel="noopener noreferrer" className="ml-2">View</a>
                                 </div>
-                            </p>
-                                
+                            </SpotlightCard>
                         </div>
                     </div>
                 </div>
@@ -42,17 +52,26 @@ const Projects = () => {
                                 TourGuide
                             </h2>
                         </div>
-                        <div className="flip-card-back rounded-lg text-justify p-3">
-                            <p> <b>TourGuide is a guide booking website designed using <code>Django</code>.</b><br/>
-                                The TourGuide aims to provide a comprehensive platform for tourists to book guides and explore
-                                tourist places, restaurants, and hotels. The website will facilitate guide booking services, offer information
-                                about tourist attractions, dining options, and accommodation, enhancing the overall travel experience.
+                        <div className="flip-card-back rounded-lg text-justify">
+                            <SpotlightCard className="card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                                <p> <b>TourGuide is a guide booking website designed using <span></span>
+                                    <ShinyText
+                                        text="Django"
+                                        disabled={false}
+                                        speed={1}
+                                        className="code"
+                                    /></b><br />
+                                    The TourGuide aims to provide a comprehensive platform for tourists to book guides and explore
+                                    tourist places, restaurants, and hotels. The website will facilitate guide booking services, offer information
+                                    about tourist attractions, dining options, and accommodation, enhancing the overall travel experience.
+
+                                </p>
                                 <div className="flex justify-center">
                                     <FaGithub className="" size={30} />
                                     <a href="https://github.com/bramha-deshmukh17/tourguide" target="_blank" rel="noopener noreferrer" className="ml-2">View</a>
                                 </div>
-                            </p>
-
+                            </SpotlightCard>
+                            
                         </div>
                     </div>
                 </div>
@@ -66,18 +85,28 @@ const Projects = () => {
                                 Smart RTO
                             </h2>
                         </div>
-                        <div className="flip-card-back rounded-lg text-justify p-3">
-                            <p> <b>Smart RTO is a RTO mobile app designed using <code>Flutter</code>.</b><br/>
-                                The Smart RTO is designed to streamline the operations
-                                of RTO in India. It aims to provide a user-friendly platform for citizens to
-                                access various RTO services online. <br/>
-                                Management of user queries regarding licenses and vehicle fines.
-                                Integration with payment gateways for fine payments.
+                        <div className="flip-card-back rounded-lg text-justify">
+                            <SpotlightCard className="card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                                <p> <b>Smart RTO is a RTO mobile app designed using <span></span>
+                                    <ShinyText
+                                        text="Flutter"
+                                        disabled={false}
+                                        speed={1}
+                                        className="code"
+                                    /></b><br />
+                                    The Smart RTO is designed to streamline the operations
+                                    of RTO in India. It aims to provide a user-friendly platform for citizens to
+                                    access various RTO services online. <br />
+                                    Management of user queries regarding licenses and vehicle fines.
+                                    Integration with payment gateways for fine payments.
+
+                                </p>
                                 <div className="flex justify-center">
                                     <FaGithub className="" size={30} />
                                     <a href="https://github.com/bramha-deshmukh17/SmartRTO" target="_blank" rel="noopener noreferrer" className="ml-2">View</a>
                                 </div>
-                            </p>
+                            </SpotlightCard>
+                            
 
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Skills.css'
+import SpotlightCard from './Animate/SpotlightCard'
 import {
     FaReact,
     FaNodeJs,
@@ -21,7 +22,8 @@ const Skills = () => {
                 <div className="p-2 rounded-full bg-white flex items-center justify-center">
                     <SiExpress className="text-gray-800 text-3xl" />
                 </div>
-            ), description: "Minimalist Node.js framework for building APIs." },
+            ), description: "Minimalist Node.js framework for building APIs."
+        },
         { name: "Java", icon: <FaJava className="text-red-600 text-3xl" />, description: "Object-oriented programming language for backend and desktop applications." },
         { name: "Databases", icon: <FaDatabase className="text-orange-600 text-3xl" />, description: "Relational & NoSQL databases like MySQL, MongoDB." },
         { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-3xl" />, description: "Markup language for creating web pages." },
@@ -40,24 +42,32 @@ const Skills = () => {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {skills.map((skill, index) => (
+
                         <div
                             key={index}
-                            className="rounded-lg shadow-md p-6 flex flex-col items-center"
+                            className="rounded-lg shadow-md flex flex-col"
                             style={{
                                 backgroundColor: "var(--bg-color)",
                                 boxShadow: "5px 5px 15px var(--shadow-color)",
                                 color: "var(--text-color)",
+                                height: "170px"
                             }}
                         >
-                            <div className="mb-4">{skill.icon}</div>
-                            <h3
-                                className="text-lg font-semibold mb-2"
-                                style={{ color: "var(--main-heading)" }}
-                            >
-                                {skill.name}
-                            </h3>
-                            <p className="text-sm text-center">{skill.description}</p>
+                            <SpotlightCard className="card shadow-card" spotlightColor="rgba(0, 229, 255, 0.2)" padding="none">
+                                <div className="flex justify-center items-center mb-4 h-16">
+                                    {skill.icon}
+                                </div>
+                                <h3
+                                    className="text-lg text-center font-semibold mb-2"
+                                    style={{ color: "var(--main-heading)" }}
+                                >
+                                    {skill.name}
+                                </h3>
+                                <p className="text-sm text-center">{skill.description}</p>
+                            </SpotlightCard>
+
                         </div>
+
                     ))}
                 </div>
             </div>

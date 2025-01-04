@@ -1,11 +1,34 @@
 import React from 'react';
 import '../css/Home.css'
+import GradientText from './Animate/GradientText'
+import ShinyText from './Animate/ShinyText';
+
 
 const Home = () => {
     return (
         <section id="home" className="m-5 flex flex-col md:flex-row items-center justify-around md:space-y-0 md:space-x-5">
             {/* Left Section (2x width) */}
-            <div className="left flex-2 max-w-2xl p-5 rounded-lg">
+            <div className="left flex-2 flex justify-center p-5">
+                <div className="text-container flex flex-col items-start">
+                    <GradientText
+                        colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                        animationSpeed={3}
+                        showBorder={false}
+                        className=""
+                    >
+                        BRAMHA DESHMUKH
+                    </GradientText>
+                    <ShinyText
+                        text="Developer"
+                        disabled={false}
+                        speed={1}
+                        className="home"
+                    />
+                </div>
+            </div>
+
+            {/* Right Section (1x width) */}
+            <div className="right flex-1 max-w-2xl p-5 rounded-lg">
                 <h2 className="text-3xl font-bold mb-8">
                     Welcome to My Portfolio
                 </h2>
@@ -20,11 +43,6 @@ const Home = () => {
                     Dedicated to growing my skills and making a positive impact in the tech
                     community.
                 </p>
-            </div>
-
-            {/* Right Section (1x width) */}
-            <div className="right flex-1 flex justify-center items-center">
-            
             </div>
         </section>
 
