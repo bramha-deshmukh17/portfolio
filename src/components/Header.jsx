@@ -31,7 +31,7 @@ const Header = () => {
     };
 
     return (
-        <header className="sticky top-0 z-10 shadow-lg w-full md:h-16 h-20">
+        <header className="sticky top-0 z-10 shadow-lg w-full md:h-20 h-30">
             <nav className="mx-auto p-4 flex justify-between items-center">
                 {/* Logo Section */}
                 <div className="flex items-center space-x-2">
