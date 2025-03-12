@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/Home.css'
 import GradientText from './Animate/GradientText'
 import ShinyText from './Animate/ShinyText';
-
+import SpotlightCard from './Animate/SpotlightCard';
 
 const Home = () => {
     return (
@@ -28,7 +28,8 @@ const Home = () => {
             </div>
 
             {/* Right Section (1x width) */}
-            <div className="right flex-1 max-w-2xl p-5 rounded-lg">
+            <SpotlightCard className=".shadow-card p-5 right flex-1 max-w-2xl" spotlightColor="rgba(0, 229, 255, 0.2)" padding="none">
+
                 <h2 className="text-3xl font-bold mb-8">
                     Welcome to My Portfolio
                 </h2>
@@ -43,7 +44,7 @@ const Home = () => {
                     Dedicated to growing my skills and making a positive impact in the tech
                     community.
                 </p>
-            </div>
+            </SpotlightCard>
         </section>
 
     );
