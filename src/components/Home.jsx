@@ -6,10 +6,11 @@ import SpotlightCard from './Animate/SpotlightCard';
 
 const Home = () => {
     return (
-        <section id="home" className="m-5 flex flex-col md:flex-row items-center justify-around md:space-y-0 md:space-x-5">
+        <section id="home" className="m-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 items-center justify-around md:space-y-0 md:space-x-5">
             {/* Left Section (2x width) */}
-            <div className="left flex-2 flex justify-center p-5">
-                <div className="text-container flex flex-col items-start">
+            <div className="left flex-2 flex justify-center items-center p-5"> {/* Added items-center */}
+                <div className="text-container flex flex-col items-center text-center"> {/* Added text-center */}
+                    <img src='me.png' className='w-1/3 align-middle' />
                     <GradientText
                         colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                         animationSpeed={3}

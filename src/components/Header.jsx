@@ -40,7 +40,7 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <div className="hidden md:flex justify-center flex-grow space-x-8">
+                <div className="hidden md:flex justify-center flex-grow space-x-2">
                     <a href="#home" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a>
                     <a href="#projects" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
                     <a href="#experience" className="px-3 py-2 rounded" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>Experience</a>
