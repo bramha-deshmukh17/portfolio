@@ -2,6 +2,8 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     margin-top: 15%;
+    cursor: default;
+    user-select: none;
 }
 
 h2 {

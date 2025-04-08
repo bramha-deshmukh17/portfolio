@@ -29,7 +29,7 @@ const Home = () => {
             </div>
 
             {/* Right Section (1x width) */}
-            <SpotlightCard className=".shadow-card p-5 right flex-1 max-w-2xl" spotlightColor="rgba(0, 229, 255, 0.2)" padding="none">
+            <SpotlightCard className="shadow-card p-5 right flex-1 max-w-2xl" spotlightColor="rgba(0, 229, 255, 0.2)" padding="none">
 
                 <h2 className="text-3xl font-bold mb-8">
                     Welcome to My Portfolio

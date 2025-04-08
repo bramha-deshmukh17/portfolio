@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/Skills.css';
 import SpotlightCard from './Animate/SpotlightCard';
 import {
-    FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare,
+    FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare,
     FaPython, FaJava, FaPhp, FaGit, FaGithub
 } from 'react-icons/fa';
 import {
