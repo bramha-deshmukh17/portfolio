@@ -15,7 +15,7 @@ const Projects = () => {
                 <div className="flip-card">
                     <div className="flip-card-inner rounded-lg">
                         <div className="flip-card-front rounded-lg">
-                            <img src="./projects/edumate.png" alt="Avatar" className="w-full h-full object-fit rounded-lg" />
+                            <img src="./projects/edumate.png" alt="Avatar" className="w-full h-16/9 object-fit rounded-lg" />
                             <h2 className="project-title absolute bottom-0 left-0 w-full text-xl font-bold py-2 text-center rounded-b-lg">
                                 EduMate
                             </h2>
@@ -47,7 +47,7 @@ const Projects = () => {
                 <div className="flip-card">
                     <div className="flip-card-inner rounded-lg">
                         <div className="flip-card-front rounded-lg">
-                            <img src="./projects/tourguide.png" alt="Avatar" className="w-full h-full object-fit rounded-lg" />
+                            <img src="./projects/tourguide.png" alt="Avatar" className="w-full h-16/9 object-fit rounded-lg" />
                             <h2 className="project-title absolute bottom-0 left-0 w-full text-xl font-bold py-2 text-center rounded-b-lg">
                                 TourGuide
                             </h2>
@@ -108,6 +108,38 @@ const Projects = () => {
                             </SpotlightCard>
                             
 
+                        </div>
+                    </div>
+                </div>
+
+                {/* 4th card */}
+                <div className="flip-card">
+                    <div className="flip-card-inner rounded-lg">
+                        <div className="flip-card-front rounded-lg">
+                            <img src="./projects/flash_chat.png" alt="Avatar" className="w-full h-16/9 object-fit rounded-lg" />
+                            <h2 className="project-title absolute bottom-0 left-0 w-full text-xl font-bold py-2 text-center rounded-b-lg">
+                                Flash Chat
+                            </h2>
+                        </div>
+                        <div className="flip-card-back rounded-lg text-justify">
+                            <SpotlightCard className="card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                                <p> <b>Flash Chat is chatting app built using<span></span>
+                                    <ShinyText
+                                        text="MERN"
+                                        disabled={false}
+                                        speed={1}
+                                        className="code"
+                                    /></b><br />
+                                    It provide clud support of MongoDB Atlas to store the user chats.<br/>
+                                    Also uses web socket to have a realtime communication.<br/>
+                                    Allows files and media sharing.<br /><br/>
+
+                                </p>
+                                <div className="flex justify-center">
+                                    <FaGithub className="" size={30} />
+                                    <a href="https://github.com/bramha-deshmukh17/flash_chat" target="_blank" rel="noopener noreferrer" className="ml-2">View</a>
+                                </div>
+                            </SpotlightCard>
                         </div>
                     </div>
                 </div>
