@@ -5,10 +5,19 @@ import SpotlightCard from './Animate/SpotlightCard';
 const Education = () => {
     const educationDetails = [
         {
-            level: "10th",
-            institution: "Savitribai Phule High Schools, Nanded",
-            year: "2018",
-            score: "89.20%",
+            level: "Postgraduate (PG)",
+            institution: "MES's IMCC, Pune",
+            year: "2023 - Current",
+            course: "MCA",
+            score: "NA",
+            status: "Pursuing",
+        },
+        {
+            level: "Undergraduate (UG)",
+            institution: "MGM's College of CS & IT, Nanded",
+            year: "2020 - 2023",
+            course: "B.Sc. C.S.",
+            score: "9.22 CGPA",
         },
         {
             level: "12th",
@@ -17,19 +26,10 @@ const Education = () => {
             score: "69.85%",
         },
         {
-            level: "Undergraduate (UG)",
-            institution: "MGM's College of CS & IT, Nanded",
-            year: "2023",
-            course: "B.Sc. C.S.",
-            score: "9.22 CGPA",
-        },
-        {
-            level: "Postgraduate (PG)",
-            institution: "MES's IMCC, Pune",
-            year: "2025",
-            course: "MCA",
-            score: "NA",
-            status: "Pursuing",
+            level: "10th",
+            institution: "Savitribai Phule High Schools, Nanded",
+            year: "2018",
+            score: "89.20%",
         },
     ];
 
