@@ -28,7 +28,12 @@ const Projects = () => {
                         {/* Thumb */}
                         <span className="absolute left-0 top-0 bg-white w-6 h-6 rounded-full shadow transform transition peer-checked:translate-x-6" />
                     </label>
-                    <span className="ml-3">3D</span>
+                    <span className="ml-3"><lord-icon
+                        src="https://cdn.lordicon.com/snmynssh.json"
+                        trigger="hover"
+                        colors="primary:#000000,secondary:#ffffff"
+                        style={{ width: '45px', height: '45px' }} />
+                    </span>
                 </div>
             </div>
 

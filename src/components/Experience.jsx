@@ -35,7 +35,13 @@ const Experience = () => {
                                 }}
                                 title='View Certificate'
                             >
-                                <HiDocument className="text-lg" />
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/fjvfsqea.json"
+                                    trigger="hover"
+                                    colors="primary:#e4e4e4,secondary:#3b82f6"
+                                    style={{ width: '25px', height: '25px', backgroundColor: 'transparent' }}
+                                />
+
                             </a>
                         </h3>
                         <p className="mb-2">

@@ -3,12 +3,12 @@ import '../css/Skills.css';
 import SpotlightCard from './Animate/SpotlightCard';
 import {
     FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare,
-    FaPython, FaJava, FaPhp, FaGit, FaGithub
+    FaPython, FaJava, FaPhp, FaGit
 } from 'react-icons/fa';
 import {
     SiTailwindcss, SiFlutter, SiExpress, SiDjango, SiMongodb,
-    SiMysql, SiPostgresql, SiSqlite, SiApache, SiVite, SiPostman,
-    SiFigma, SiCanva, SiSocketdotio, SiFirebase, SiBootstrap, SiDart
+    SiMysql, SiPostgresql, SiSqlite, SiPostman,
+    SiSocketdotio, SiFirebase, SiBootstrap, SiDart
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -33,13 +33,16 @@ const Skills = () => {
         { name: "SQLite", icon: <SiSqlite className="text-gray-600 text-3xl" /> },
         { name: "Firebase", icon: <SiFirebase className="text-yellow-400 text-3xl" /> },
         { name: "Socket.io", icon: <SiSocketdotio className="text-3xl" /> },
-        { name: "Vite", icon: <SiVite className="text-purple-500 text-3xl" /> },
-        { name: "Apache", icon: <SiApache className="text-red-600 text-3xl" /> },
         { name: "Git", icon: <FaGit className="text-orange-500 text-3xl" /> },
-        { name: "GitHub", icon: <FaGithub className="text-3xl" /> },
+        {
+            name: "GitHub", icon: <lord-icon
+                src="https://cdn.lordicon.com/lllcnxva.json"
+                trigger="hover"
+                colors="primary:#121331,secondary:#ebe6ef,tertiary:#000000"
+                style={{ width: '45px', height: '45px' }}
+            />
+        },
         { name: "Postman", icon: <SiPostman className="text-orange-600 text-3xl" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-500 text-3xl" /> },
-        { name: "Canva", icon: <SiCanva className="text-cyan-600 text-3xl" /> }
     ];
 
     return (

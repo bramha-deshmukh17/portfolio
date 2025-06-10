@@ -1,7 +1,5 @@
-import React from 'react';
 import '../css/Contact.css';
 import ShinyText from './Animate/ShinyText';
-import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaDownload } from 'react-icons/fa';
 
 const Contact = () => {
     return (
@@ -12,7 +10,13 @@ const Contact = () => {
                 <div className="flex flex-col items-start gap-4">
                     {/* LinkedIn */}
                     <div className="flex items-center">
-                        <FaLinkedin className="text-blue-800" size={30} />
+                        <lord-icon
+                            src="https://cdn.lordicon.com/kpoplnek.json"
+                            trigger="hover"
+                            colors="primary:#e4e4e4,secondary:#4bb3fd"
+                            style={{ width: '45px', height: '45px' }}
+                        />
+
                         <a
                             href="https://www.linkedin.com/in/bramha-deshmukh17/"
                             target="_blank"
@@ -25,7 +29,13 @@ const Contact = () => {
 
                     {/* GitHub */}
                     <div className="flex items-center">
-                        <FaGithub style={{color: "var(--text-color)"}} size={30} />
+                        <lord-icon
+                            src="https://cdn.lordicon.com/lllcnxva.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#ebe6ef,tertiary:#000000"
+                            style={{width: '45px', height: '45px'}} 
+                        />
+                        
                         <a
                             href="https://github.com/bramha-deshmukh17"
                             target="_blank"
@@ -39,7 +49,13 @@ const Contact = () => {
 
                     {/* Gmail */}
                     <div className="flex items-center">
-                        <FaEnvelope className="text-red-600" size={30} />
+                        <lord-icon
+                            src="https://cdn.lordicon.com/uufkkpxl.json"
+                            trigger="hover"
+                            colors="primary:#f24c00,secondary:#e4e4e4"
+                            style={{ width: '45px', height: '45px', backgroundColor: 'transparent' }}
+                        />
+
                         <a
                             href="mailto:brammhadeshmukh17@gmail.com"
                             className="ml-2 text-lg text-red-600 hover:underline"
@@ -53,7 +69,13 @@ const Contact = () => {
                 <div className="flex flex-col items-start gap-4">
                     {/* Twitter */}
                     <div className="flex items-center">
-                        <FaTwitter className="text-blue-500" size={30} />
+                        <lord-icon
+                            src="https://cdn.lordicon.com/guvfanks.json"
+                            trigger="hover"
+                            colors="primary:#000000,secondary:#000000"
+                            style={{ width: '35px', height: '45px', backgroundColor: '#ffffff', borderRadius: '20%' }}
+                        />
+
                         <a
                             href="https://x.com/deshmukh_bramha"
                             target="_blank"
@@ -64,9 +86,8 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    {/* resume */}
+                    {/* Resume */}
                     <div className="flex items-center">
-                        
                         <ShinyText
                             text="Resume"
                             disabled={false}
@@ -75,7 +96,6 @@ const Contact = () => {
                             onClick={() => window.open('./resume.pdf', '_blank')}
                         />
                     </div>
-
                 </div>
             </div>
         </section>
