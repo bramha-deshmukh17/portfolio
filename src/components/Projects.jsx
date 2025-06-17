@@ -66,10 +66,20 @@ const Projects = () => {
                                         <br />
                                         Allows files and media sharing.
                                     </p>
-                                    <div className="flex justify-center mt-4">
-                                        <FaGithub size={30} />
-                                        <a href="https://github.com/bramha-deshmukh17/flash_chat" target="_blank" rel="noopener noreferrer" className="ml-2">
-                                            View
+                                    <div className="flex flex-col items-center mt-4">
+                                        <div className="flex items-center">
+                                            <FaGithub size={30} />
+                                            <a href="https://github.com/bramha-deshmukh17/flash_chat" target="_blank" rel="noopener noreferrer" className="ml-2">
+                                                View
+                                            </a>
+                                        </div>
+                                        <a
+                                            href="https://flash-chat-9dt7.onrender.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="mt-2 text-blue-600 underline font-semibold"
+                                        >
+                                            Live Demo
                                         </a>
                                     </div>
                                 </SpotlightCard>
