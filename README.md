@@ -14,6 +14,15 @@ A modern and responsive portfolio website built using **React**, **Vite**, and *
 
 ---
 
+## Table of Contents
+
+- [✨ Features](#-features)
+- [⚙️ Installation and Setup](#️-installation-and-setup)
+- [🧑‍💻 Author](#-author)
+- [📬 Contact](#-contact)
+
+---
+
 ## ✨ Features
 
 -  **Fully responsive design**
