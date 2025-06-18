@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import {
     SiTailwindcss, SiFlutter, SiExpress, SiDjango, SiMongodb,
-    SiMysql, SiPostgresql, SiSqlite, SiPostman,
+    SiMysql, SiPostgresql, SiPostman,
     SiSocketdotio, SiFirebase, SiBootstrap, SiDart
 } from 'react-icons/si';
 
@@ -30,7 +30,6 @@ const Skills = () => {
         { name: "MongoDB", icon: <SiMongodb className="text-green-500 text-3xl" /> },
         { name: "MySQL", icon: <SiMysql className="text-blue-500 text-3xl" /> },
         { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700 text-3xl" /> },
-        { name: "SQLite", icon: <SiSqlite className="text-gray-600 text-3xl" /> },
         { name: "Firebase", icon: <SiFirebase className="text-yellow-400 text-3xl" /> },
         { name: "Socket.io", icon: <SiSocketdotio className="text-3xl" /> },
         { name: "Git", icon: <FaGit className="text-orange-500 text-3xl" /> },

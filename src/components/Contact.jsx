@@ -93,7 +93,7 @@ const Contact = () => {
                             disabled={false}
                             speed={1}
                             className="home"
-                            onClick={() => window.open('./resume.pdf', '_blank')}
+                            onClick={() => window.open('./bramha_deshmukh_resume.pdf', '_blank')}
                         />
                     </div>
                 </div>
