@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../css/Projects.css';
-import { FaGithub } from 'react-icons/fa';
 import ShinyText from './Animate/ShinyText';
 import SpotlightCard from './Animate/SpotlightCard';
 import Projects3D from './Animate/Projects3D';
@@ -66,9 +65,14 @@ const Projects = () => {
                                         <br />
                                         Allows files and media sharing.
                                     </p>
-                                    <div className="flex flex-col items-center mt-4">
+                                    <div className="flex flex-col items-center mt-1">
                                         <div className="flex items-center">
-                                            <FaGithub size={30} />
+                                            <lord-icon
+                                                src="https://cdn.lordicon.com/lllcnxva.json"
+                                                trigger="hover"
+                                                colors="primary:#121331,secondary:#ebe6ef,tertiary:#000000"
+                                                style={{ width: '45px', height: '45px' }}
+                                            />
                                             <a href="https://github.com/bramha-deshmukh17/flash_chat" target="_blank" rel="noopener noreferrer" className="ml-2">
                                                 View
                                             </a>
@@ -77,7 +81,7 @@ const Projects = () => {
                                             href="https://flash-chat-9dt7.onrender.com/"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="mt-2 text-blue-600 underline font-semibold"
+                                            className="mt-2"
                                         >
                                             Live Demo
                                         </a>
@@ -109,9 +113,14 @@ const Projects = () => {
                                         <br />
                                         Integration with payment gateways for fine payments.
                                     </p>
-                                    <div className="flex justify-center mt-2">
-                                        <FaGithub size={30} />
-                                        <a href="https://github.com/bramha-deshmukh17/SmartRTO" target="_blank" rel="noopener noreferrer" className="ml-2">
+                                    <div className="flex justify-center">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/lllcnxva.json"
+                                            trigger="hover"
+                                            colors="primary:#121331,secondary:#ebe6ef,tertiary:#000000"
+                                            style={{ width: '45px', height: '45px' }}
+                                        />
+                                        <a href="https://github.com/bramha-deshmukh17/SmartRTO" target="_blank" rel="noopener noreferrer" className="ml-2 mt-2">
                                             View
                                         </a>
                                     </div>
@@ -138,9 +147,14 @@ const Projects = () => {
                                         <br />
                                         The TourGuide aims to provide a comprehensive platform for tourists to book guides and explore tourist places, restaurants, and hotels.
                                     </p>
-                                    <div className="flex justify-center mt-4">
-                                        <FaGithub size={30} />
-                                        <a href="https://github.com/bramha-deshmukh17/tourguide" target="_blank" rel="noopener noreferrer" className="ml-2">
+                                    <div className="flex justify-center mt-1">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/lllcnxva.json"
+                                            trigger="hover"
+                                            colors="primary:#121331,secondary:#ebe6ef,tertiary:#000000"
+                                            style={{ width: '45px', height: '45px' }}
+                                        />
+                                        <a href="https://github.com/bramha-deshmukh17/tourguide" target="_blank" rel="noopener noreferrer" className="ml-2 mt-3">
                                             View
                                         </a>
                                     </div>
@@ -167,9 +181,14 @@ const Projects = () => {
                                         <br />
                                         With its 3 distinct modules - Student Module, Admin Module, Discussion Forum - the platform provides a comprehensive and user-friendly environment for effective learning, efficient course management, and engaging discussions.
                                     </p>
-                                    <div className="flex justify-center mt-4">
-                                        <FaGithub size={30} />
-                                        <a href="https://github.com/bramha-deshmukh17/edumate" target="_blank" rel="noopener noreferrer" className="ml-2">
+                                    <div className="flex justify-center mt-1">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/lllcnxva.json"
+                                            trigger="hover"
+                                            colors="primary:#121331,secondary:#ebe6ef,tertiary:#000000"
+                                            style={{ width: '45px', height: '45px' }}
+                                        />
+                                        <a href="https://github.com/bramha-deshmukh17/edumate" target="_blank" rel="noopener noreferrer" className="ml-2 mt-3">
                                             View
                                         </a>
                                     </div>
