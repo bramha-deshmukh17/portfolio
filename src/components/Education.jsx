@@ -7,10 +7,9 @@ const Education = () => {
         {
             level: "Postgraduate (PG)",
             institution: "MES's IMCC, Pune",
-            year: "2023 - Current",
+            year: "2023 - 2025",
             course: "MCA",
-            score: "NA",
-            status: "Pursuing",
+            score: "7.98 CGPA",
         },
         {
             level: "Undergraduate (UG)",
