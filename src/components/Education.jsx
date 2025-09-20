@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/Education.css'
 import SpotlightCard from './Animate/SpotlightCard';
 
@@ -8,20 +7,21 @@ const Education = () => {
             level: "Postgraduate (PG)",
             institution: "MES's IMCC, Pune",
             year: "2023 - 2025",
-            course: "MCA",
+            course: "Master of Computer Application",
             score: "7.98 CGPA",
         },
         {
             level: "Undergraduate (UG)",
             institution: "MGM's College of CS & IT, Nanded",
             year: "2020 - 2023",
-            course: "B.Sc. C.S.",
+            course: "Bachelor of Science (Computer Science)",
             score: "9.22 CGPA",
         },
         {
             level: "12th",
             institution: "Yashwant Junior College, Nanded",
             year: "2020",
+            course: "Science (Maths)",
             score: "69.85%",
         },
         {
@@ -35,9 +35,6 @@ const Education = () => {
     return (
         <section id="education" className="py-12 m-5">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-5">
-                    Education
-                </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {educationDetails.map((education, index) => (
 

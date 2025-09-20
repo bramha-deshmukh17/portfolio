@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/Skills.css';
 import SpotlightCard from './Animate/SpotlightCard';
 import {
@@ -47,7 +46,6 @@ const Skills = () => {
     return (
         <section id="skills" className="py-12 m-5">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-8">My Skills</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {skills.map((skill, index) => (
                         <div

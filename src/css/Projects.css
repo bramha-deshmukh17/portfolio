@@ -1,17 +1,18 @@
 #projects {
-    margin-top: 15%;
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    /* center content vertically as a column */
+    align-items: center;
+    justify-content: center;
     background-color: var(--bg-color);
-}
-
-#projects h2{
-    color: var(--main-heading);
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.project-title{
+.project-title {
     background-color: var(--bg-color);
     color: var(--main-heading);
 }

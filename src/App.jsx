@@ -1,4 +1,3 @@
-import React from 'react';
 import ErrorBoundary from './components/ErrorBoundary';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -10,19 +9,27 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 import './index.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App min-h-screen flex flex-col">
       <ErrorBoundary>
-        <Header />
-        <Home />
-        <Projects />
-        <Experience />
-        <Skills />
-        <Education />
-        <Contact />
-        <Footer />
+        <Router>
+          <Header />
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/education" element={<Education />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Home />} />
+            </Routes>
+          </main>
+          <Footer />
+        </Router>
       </ErrorBoundary>
     </div>
   );

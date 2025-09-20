@@ -1,9 +1,9 @@
-#experience{
-    margin-top: 15%;
+#experience {
     background-color: var(--bg-color);
     color: var(--text-color);
-}
 
-h2{
-    color: var(--main-heading);
+    min-height: calc(100vh - 30vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

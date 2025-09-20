@@ -1,51 +1,28 @@
-import React, { useState } from 'react';
 import '../css/Projects.css';
 import ShinyText from './Animate/ShinyText';
 import SpotlightCard from './Animate/SpotlightCard';
-import Projects3D from './Animate/Projects3D';
+
+// Small pulsing red dot shown on live projects
+const LiveDot = () => (
+    <span className="absolute top-2 right-2" title="Live">
+        <span className="inline-block w-3 h-3 rounded-full bg-red-500 animate-pulse ring-2 ring-red-400/40" />
+        <span title='Live'></span>
+    </span>
+);
 
 const Projects = () => {
-    const [view3D, setView3D] = useState(false);
-    const handleToggle = () => setView3D(prev => !prev);
 
     return (
         <section id="projects" className="m-5 mt-5 p-5 rounded">
-            {/* Header with title and switch */}
-            <div className="mb-8 flex items-center justify-between">
-                <h2 className="text-3xl font-bold">My Projects</h2>
-                <div className="flex items-center">
-                    <span className="mr-3">2D</span>
-                    <label className="relative inline-block w-12 h-6">
-                        <input
-                            type="checkbox"
-                            checked={view3D}
-                            onChange={handleToggle}
-                            className="peer opacity-0 w-0 h-0"
-                        />
-                        {/* Track */}
-                        <span className="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-300 rounded-full transition peer-checked:bg-blue-600" />
-                        {/* Thumb */}
-                        <span className="absolute left-0 top-0 bg-white w-6 h-6 rounded-full shadow transform transition peer-checked:translate-x-6" />
-                    </label>
-                    <span className="ml-3"><lord-icon
-                        src="https://cdn.lordicon.com/snmynssh.json"
-                        trigger="hover"
-                        colors="primary:#000000,secondary:#ffffff"
-                        style={{ width: '45px', height: '45px' }} />
-                    </span>
-                </div>
-            </div>
+            <div className="w-full max-w-6xl mx-auto">
 
-            {view3D ? (
-                /* 3D Canvas View */
-                <Projects3D />
-            ) : (
-                /* 2D Grid View */
                 <div className="place-items-center m-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Flash Chat */}
+                    {/* Flash Chat (LIVE) */}
                     <div className="flip-card">
                         <div className="flip-card-inner rounded-lg">
                             <div className="flip-card-front rounded-lg">
+                                {/* show live dot on hosted project */}
+                                <LiveDot />
                                 <img src="./projects/flash_chat.png" alt="Flash Chat" className="w-full h-16/9 object-fit rounded-lg" />
                                 <h2 className="project-title absolute bottom-0 left-0 w-full text-xl font-bold py-2 text-center rounded-b-lg">
                                     Flash Chat
@@ -197,7 +174,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            </div>
         </section>
     );
 };

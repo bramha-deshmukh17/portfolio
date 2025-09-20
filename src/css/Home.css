@@ -1,11 +1,15 @@
-/*Home css*/
 #home {
-    padding-top: 5%;
     text-align: justify;
     background-color: var(--bg-color);
+
+    /* fill between header and footer */
+    min-height: calc(100vh - 30vh);
+
+    /* let Tailwind classes control layout; avoid horizontal overflow */
+    overflow-x: hidden;
 }
 
-.right{
+.right {
     cursor: default;
     border-radius: 10px;
     box-shadow: 10px 10px 20px 5px var(--shadow-color);

@@ -1,5 +1,82 @@
-#contact{
+#contact {
     background-color: var(--bg-color);
     color: var(--text-color);
-    margin-top: 15%;
+    min-height: calc(100vh - 30vh);
+    display: grid;
+    place-items: center;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+
+    /* glass + subtle border */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 10px 30px -12px var(--shadow-color);
+
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 18px 40px -18px var(--shadow-color);
+}
+
+.icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: radial-gradient(120% 120% at 50% 0%, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03));
+}
+
+.label {
+    font-weight: 600;
+    letter-spacing: .2px;
+}
+
+/* accent glows on hover */
+.contact-card.linkedin:hover {
+    box-shadow: 0 18px 40px -18px rgba(59, 130, 246, .6);
+}
+
+.contact-card.github:hover {
+    box-shadow: 0 18px 40px -18px rgba(183, 176, 176, 0.5);
+}
+
+.contact-card.gmail:hover {
+    box-shadow: 0 18px 40px -18px rgba(242, 76, 0, .55);
+}
+
+.contact-card.resume:hover {
+    box-shadow: 0 18px 40px -18px rgba(234, 179, 8, .55);
+}
+
+/* allow button variant */
+button.contact-card {
+    background: inherit;
+    border: none;
+    cursor: pointer;
 }
