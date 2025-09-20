@@ -14,11 +14,18 @@
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: minmax(260px, 420px);
+    /* single column width range */
+    justify-content: center;
+    /* center the column in the container */
+    justify-items: stretch;
+    /* make each card fill the column */
     gap: 1rem;
+    margin-inline: auto;
 }
 
 .contact-card {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -76,7 +83,7 @@
 
 /* allow button variant */
 button.contact-card {
-    background: inherit;
-    border: none;
+    -webkit-appearance: none;
+    appearance: none;
     cursor: pointer;
 }

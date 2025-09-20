@@ -28,7 +28,7 @@ const Contact = () => {
 
     return (
         <section id="contact" className="m-5 mt-5 rounded">
-            <div className="contact-container">
+            <div className="contact-container justify-center items-center p-5">
 
                 <div className="contact-grid">
                     {cards.map(card => (
@@ -57,7 +57,14 @@ const Contact = () => {
                         onClick={() => window.open('./bramha_deshmukh_resume.pdf', '_blank')}
                         title="Open Resume"
                     >
-                        <span className="icon-wrap" aria-hidden="true">📄</span>
+                        <span className="icon-wrap" aria-hidden="true">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/fjvfsqea.json"
+                                trigger="hover"
+                                colors="primary:#e4e4e4,secondary:#3b82f6"
+                                style={{ width: '25px', height: '25px', backgroundColor: 'transparent' }}
+                            />
+                        </span>
                         <span className="label">
                             <ShinyText text="Resume" disabled={false} speed={1} className="home" />
                         </span>
